@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Spotter</string>
     <string name="workout_title">Spotter</string>
@@ -38,4 +39,5 @@
     <string name="history_title">Workout History</string>
     <string name="history_empty">No workouts yet. Finish a workout and it will show up here.</string>
     <string name="history_exercise_count">%1$d exercise(s) • Tap to view details</string>
+    <string name="gym_finder_title">Nearby Gyms</string>
 </resources>
