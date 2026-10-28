@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_workout"
+                android:textColor="@color/text_dark"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/log_workout_description"
+                android:textColor="@color/text_subdued"
+                android:textSize="15sp" />
+
+            <include
+                android:id="@+id/logBenchPress"
+                layout="@layout/item_exercise_log" />
+
+            <include
+                android:id="@+id/logPushUp"
+                layout="@layout/item_exercise_log" />
+
+            <include
+                android:id="@+id/logLatPulldown"
+                layout="@layout/item_exercise_log" />
+
+            <include
+                android:id="@+id/logSeatedRow"
+                layout="@layout/item_exercise_log" />
+
+            <include
+                android:id="@+id/logSquat"
+                layout="@layout/item_exercise_log" />
+
+            <include
+                android:id="@+id/logLegPress"
+                layout="@layout/item_exercise_log" />
+
+            <include
+                android:id="@+id/logBicepCurl"
+                layout="@layout/item_exercise_log" />
+
+            <include
+                android:id="@+id/logTricepPushdown"
+                layout="@layout/item_exercise_log" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loggingBackButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/finishWorkoutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/finish_workout"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
